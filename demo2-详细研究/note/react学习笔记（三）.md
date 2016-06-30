@@ -22,3 +22,12 @@ function StatelessComponent(){
 		return <div> HAHA{props.name} </div>
 }
 ```
+###2.将组件渲染到dom中
+1.在HTML中定义一个元素，设置好ID
+ 
+2.在JSX中调用ReactDOM.render方法，第一个参数为组件，第二位刚才定义的DOM元素
+
+组件的话采用`<Component someProps="" />`的格式
+
+定义的DOM元素采用` document.getElementById `的方法或你采用的其他的DOM操作库
+
